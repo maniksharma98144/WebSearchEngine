@@ -90,7 +90,8 @@ public class Crawler {
 						if(files.length>120) {                
 							break;                                     //break
 						}else {
-							crawl(level++, next_link);
+							level++;
+							crawl(level, next_link);
 						}
 					}
 				}
